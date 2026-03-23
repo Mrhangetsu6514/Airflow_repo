@@ -1,6 +1,31 @@
-.venv/
-__pycache__/
+# Credentials and Secrets (CRITICAL)
+.env*
+.env.save
+connect_config.json
+*.pem
+*.key
+
+# Airflow specific
 logs/
 plugins/
-.env
-*.pyc
+config/
+# Note: Keeping the config folder ignored is safer than just the .cfg file
+unittests.cfg
+
+# Python environment and cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# OS and IDE specific
+.DS_Store
+Thumbs.db
+*.Identifier
+.vscode/
+.idea/
+
+# Development Junk
+* - Copy.py
